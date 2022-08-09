@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-body-bg:hsl(230, 60%, 98%);
+    --color-cards-bg:hsl(255,100%,100%);
+    --color-filter-bg:hsl(231, 100%, 97%);
+    --color-filter-active-bg: hsl(230, 76%, 59%);
+    --color-filter-bg-hover: hsl(230, 100%, 91%);
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+body
+{
+    display: flex;
+    background-color: var(--color-body-bg);
+    font-family: 'Jost', sans-serif;;
+
+}
+ul{
+    list-style: none;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    width: 25.5rem;
+    gap:2.4rem;
+}
+.header{
+    // height:13.7rem;
+
+}
+.card{
+    background-color: var(--color-cards-bg);
+    border-radius: 1rem;
+}
+.navbar{
+    width: 25.5rem;
+    padding: 2.4rem;
+    box-sizing: border-box;
+    &__filters{
+
+    }
+    &__roadmap{
+
+        
+    }
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:0.8rem;
+    row-gap:1.4rem;
+    font-weight: 600;
+    color: var(--color-filter-active-bg);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -.2px;
+    &__badge{
+        padding: .5rem 1.6rem;
+        background-color: var(--color-filter-bg);
+        border-radius: .8rem;
+        &:hover{
+            background-color: var(--color-filter-bg-hover);
+            cursor: pointer;
+        }
+        &--active{
+            background-color: var(--color-filter-active-bg);
+            color:var(--color-body-bg);
+        }
+    }
+    
+}
