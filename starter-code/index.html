@@ -1,57 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Product feedback app</title>
-</head>
-<body>
-<aside>
-  <header class="header">
-    Frontend Mentor
-    Feedback Board
-  </header>
-  <nav class="card navbar navbar__filters">
-    <ul class="filters">
-      <li class="filters__badge filters__badge--active">All</li>
-      <li class="filters__badge">UI</li>
-      <li class="filters__badge">UX</li>
-      <li class="filters__badge">Enhancement</li>
-      <li class="filters__badge">Bug</li>
-      <li class="filters__badge">Feature</li>
-    </ul>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product feedback app</title>
+  </head>
+  <body>
+    <aside>
+      <header class="header">
+        <h1 class="header__title">Frontend Mentor</h1>
+        <h2 class="header__subtitle">Feedback Board</h2>
+      </header>
+      <section class="card sidebar sidebar__filters">
+        <ul class="filters">
+          <li class="filters__badge filters__badge--active">All</li>
+          <li class="filters__badge">UI</li>
+          <li class="filters__badge">UX</li>
+          <li class="filters__badge">Enhancement</li>
+          <li class="filters__badge">Bug</li>
+          <li class="filters__badge">Feature</li>
+        </ul>
+      </section>
+      <nav class="card sidebar sidebar__roadmap">
+        <header class = "roadmap__header">
+          <h3 class="roadmap__title">Roadmap</h3>
+          <span class="roadmap__link">View</span>
+        </header>
+        <ol class="roadmap__items">
+          <li class="roadmap__status roadmap__status--planned ">Planned  <span class="roadmap__count">2</span></li>
+          <li class="roadmap__status roadmap__status--progress">In-Pogress <span class="roadmap__count">3</span></li>
+          <li class="roadmap__status roadmap__status--live">Live <span class="roadmap__count">1</span></li>
+        </ol>       
+      </nav>
+    </aside>
 
-  </nav>
-  <nav class="card navbar navbar__roadmap">
-  Roadmap
-  View
+    <main>
+      <nav class="navbar">
+        <img
+          src="./assets/suggestions/icon-suggestions.svg"
+          alt=""
+          class="navbar__suggestions-logo"
+        />
+        <div class="navbar__suggestions">6 Suggestions</div>
 
-  Planned <!-- Add number here -->
-  In-Progress <!-- Add number here -->
-  Live <!-- Add number here -->
-  </nav>
-</aside>
+        <div class="dropdown">
+          <button class="dropdown__label">
+            Sort by : <span class="dropdown__button"> Most Upvotes</span>
+          </button>
+          <div class="dropdown__content-container">
+            <div class="dropdown__content">
+              <a href="" class="dropdown__link dropdown__link--active"
+                >Most Upvotes</a
+              >
+              <a href="" class="dropdown__link">Least Upvotes</a>
+              <a href="" class="dropdown__link">Most Comments</a>
+              <a href="" class="dropdown__link">Least Comments</a>
+            </div>
+          </div>
+        </div>
+        <!-- Most upvotes
+    Least upvotes
+    Most comments
+    Least comments -->
+        <a class="navbar__button button button--link"> &plus; Add Feedback </a>
+      </nav>
+      <!-- No feedback -->
+      <!-- There is no feedback yet. Got a suggestion? Found a bug that needs to be squashed? We love 
+    hearing about new ideas to improve our app.  
+    Add Feedback -->
+      <section class="feedback__list">
+        <article class="card feedback__card">
+          <div class="feedback__upvotes">
+            <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+            112
+          </div>
+          <div class="feedback__content">
+            <h3 class="content__title">Add tags for solutions</h3>
+            <p class="content__body">
+              Easier to search for solutions based on a specific stack.
+            </p>
+            <div class="filters__badge">Enhancement</div>
+          </div>
+          <div class="feedback__comments">
+            <img src="./assets/shared/icon-comments.svg" alt="" />
+            1
+          </div>
+        </article>
 
-<main>
-  
-  <!-- Add number of suggestions here --> Suggestions
-  Sort by:
-  Most upvotes
-  Least upvotes
-  Most comments
-  Least comments
-  
-  Add Feedback
-  
-  <!-- No feedback -->
-  There is no feedback yet. Got a suggestion? Found a bug that needs to be squashed? We love 
-  hearing about new ideas to improve our app.
-  
-  Add Feedback
-  <!-- No feedback end -->
-</main>
-</body>
+        <article class="card feedback__card">
+          <div class="feedback__upvotes">
+            <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+            99
+          </div>
+          <div class="feedback__content">
+            <h3 class="content__title">Add a dark theme option</h3>
+            <p class="content__body">
+              It would help people with light sensitivities and who prefer dark
+              mode.
+            </p>
+            <div class="filters__badge">Feature</div>
+          </div>
+          <div class="feedback__comments">
+            <img src="./assets/shared/icon-comments.svg" alt="" />
+            4
+          </div>
+        </article>
+
+        <article class="card feedback__card">
+          <div class="feedback__upvotes">
+            <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+            65
+          </div>
+          <div class="feedback__content">
+            <h3 class="content__title">Q&A within the challenge hubs</h3>
+            <p class="content__body">
+              Challenge-specific Q&A would make for easy reference.
+            </p>
+            <div class="filters__badge">Feature</div>
+          </div>
+          <div class="feedback__comments">
+            <img src="./assets/shared/icon-comments.svg" alt="" />
+            1
+          </div>
+        </article>
+        <article class="card feedback__card">
+          <div class="feedback__upvotes">
+            <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+            51
+          </div>
+          <div class="feedback__content">
+            <h3 class="content__title">Allow image/video upload to feedback</h3>
+            <p class="content__body">
+              Images and screencasts can enhance comments on solutions.
+            </p>
+            <div class="filters__badge">Feature</div>
+          </div>
+          <div class="feedback__comments">
+            <img src="./assets/shared/icon-comments.svg" alt="" />
+            2
+          </div>
+        </article>
+        <article class="card feedback__card">
+          <div class="feedback__upvotes">
+            <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+            99
+          </div>
+          <div class="feedback__content">
+            <h3 class="content__title">Add a dark theme option</h3>
+            <p class="content__body">
+              It would help people with light sensitivities and who prefer dark
+              mode.
+            </p>
+            <div class="filters__badge">Feature</div>
+          </div>
+          <div class="feedback__comments">
+            <img src="./assets/shared/icon-comments.svg" alt="" />
+            4
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

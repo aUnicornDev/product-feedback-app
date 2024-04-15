@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css" />
   <title>Frontend Mentor | Product feedback app</title>
 </head>
 
 <body>
-  Go Back
-  Edit Feedback
+
+
+  <!-- <a href="" class="link">
+    
+    Go Back
+  </a>
+  <a href="" class="button button--link">
+    Edit Feedback -->
+  </a>
 
   <!-- Add upvotes --> 
   <!-- Add title -->
@@ -25,13 +32,57 @@
   <!-- Add name -->
   <!-- Add username -->
   <!-- Add comment -->
-  Reply
+  <!-- <section>
 
-  Add Comment
-  Type your comment here
-  250 Characters left
-
-  Post Comment
-  
-</body>
+  </section> -->
+  <section class="feedback__list">
+  <article class="card feedback__card">
+    <div class="feedback__upvotes">
+      <img src="./assets/shared/icon-arrow-up.svg" alt="" />
+      99
+    </div>
+    <div class="feedback__content">
+      <h3 class="content__title">Add a dark theme option</h3>
+      <p class="content__body">
+        It would help people with light sensitivities and who prefer dark
+        mode.
+      </p>
+      <div class="filters__badge">Feature</div>
+    </div>
+    <div class="feedback__comments">
+      <img src="./assets/shared/icon-comments.svg" alt="" />
+      4
+    </div>
+  </article>
+  <section class="comment__list">
+    <h3 class="comment__list__header">4 Comments</h3>
+    <article class="comment__card card">
+      <img src="./assets/user-images/image-elijah.jpg" alt="" class="comment__author-photo">   
+      <div class="comment__content">
+        <div class="comment__header">
+          <section class="comment__author">
+            <h2 class="author__fullname">Elijah Moss</h2>
+            <h3 class="author__username">@hexagon.bestagon</h3>
+          </section>
+          <a href="" class="comment__reply">
+            Reply
+          </a>
+        </div>
+        <div class="comment__comment">
+          Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.
+        </div>
+        
+      </div>
+    </article>
+  </section>
+</section>
+  <!-- Reply
+    
+    Add Comment
+    Type your comment here
+    250 Characters left
+    
+    Post Comment -->
+    
+  </body>
 <html
